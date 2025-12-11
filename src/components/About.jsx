@@ -1,62 +1,45 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function About() {
   return (
-    <Container>
+    <Container className="py-4">
       <Row className="mb-4">
         <Col>
-          <h1 className="display-4">About BadgerFest 2025</h1>
-          <p className="lead">UW-Madison's Annual Music & Arts Celebration</p>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col lg={8}>
-          <Card>
-            <Card.Body>
-              <Card.Title>Event Information</Card.Title>
-              <Card.Text>
-                BadgerFest is UW-Madison's premier music and arts festival, bringing together 
-                students, faculty, and the Madison community for two days of incredible 
-                performances, art exhibitions, and local food.
-              </Card.Text>
-              <Card.Text>
-                <strong>When:</strong> April 25-26, 2025<br />
-                <strong>Where:</strong> Library Mall, UW-Madison Campus<br />
-                <strong>Admission:</strong> Free for UW Students with ID, $10 General Admission
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col lg={4}>
-          <Card className="bg-light">
-            <Card.Body>
-              <Card.Title>Quick Facts</Card.Title>
-              <ul className="list-unstyled">
-                <li>🎵 20+ Performing Artists</li>
-                <li>🎨 Art Installations</li>
-                <li>🍔 15+ Food Vendors</li>
-                <li>🎪 Multiple Stages</li>
-                <li>👥 Expected 5,000+ Attendees</li>
-              </ul>
-            </Card.Body>
-          </Card>
+          <h1 className="display-4">About BadgerFest</h1>
+          <p className="lead">UW-Madison's Premier Music & Arts Festival</p>
         </Col>
       </Row>
 
       <Row>
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Project Information</Card.Title>
-              <Card.Text>
-                This website is developed as part of CS571: Building User Interfaces at 
-                UW-Madison. The goal is to create an interactive platform where festival-goers 
-                can explore the lineup, plan their schedule, and get all the information they 
-                need for an amazing BadgerFest experience.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <Col lg={8}>
+          <h2 className="h4 mb-3">Our Mission</h2>
+          <p>
+            BadgerFest brings together the best of Madison's music and arts scene for two incredible days of performances, 
+            exhibitions, and community celebration. Located in the heart of campus at Library Mall, this free festival 
+            showcases both emerging and established artists from across Wisconsin and beyond.
+          </p>
+
+          <h2 className="h4 mb-3 mt-4">Festival Details</h2>
+          <p>
+            <strong>When:</strong> April 25-26, 2025<br />
+            <strong>Where:</strong> Library Mall, UW-Madison Campus<br />
+            <strong>Admission:</strong> Free and open to all
+          </p>
+
+          <h2 className="h4 mb-3 mt-4">What to Expect</h2>
+          <ul>
+            <li>Live performances on three stages</li>
+            <li>Interactive art installations</li>
+            <li>Local food vendors</li>
+            <li>Student artwork showcase</li>
+            <li>Community engagement activities</li>
+          </ul>
+
+          <h2 className="h4 mb-3 mt-4">Contact Us</h2>
+          <p>
+            Have questions? Reach out to us at <a href="mailto:info@badgerfest.wisc.edu">info@badgerfest.wisc.edu</a> or 
+            call (608) 555-FEST.
+          </p>
         </Col>
       </Row>
     </Container>
